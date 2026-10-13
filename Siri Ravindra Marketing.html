@@ -1,0 +1,333 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Siri Ravindra Marketing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400;62..125,600;62..125,800&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;1,7..72,400&display=swap">
+<style>
+/* Layout: a campaign brief. Thesis hero, results strip, three case cards with channel tags, a content calendar, research projects, compact timeline, skills */
+:root{
+  --paper:#F4F5F2;
+  --surface:#FFFFFF;
+  --ink:#1C1A2B;
+  --muted:#5B5A6B;
+  --rule:#DCDDE3;
+  --accent:#2F49D1;
+  --accent-ink:#2238AE;
+  --accent-soft:#E3E8FB;
+  --mark:#F2C14E;
+  --display:"Archivo", "Helvetica Neue", Arial, sans-serif;
+  --body:"Literata", Georgia, "Times New Roman", serif;
+  --s-1:.84rem; --s0:1.05rem; --s1:1.25rem; --s2:1.6rem; --s3:2.15rem; --s4:clamp(2.3rem,6.6vw,4.4rem);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#12121B; --surface:#1A1A26; --ink:#ECEBF3; --muted:#A4A3B6; --rule:#2C2C3D;
+    --accent:#8DA0FF; --accent-ink:#A9B7FF; --accent-soft:#232B52; --mark:#C99A2E;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#12121B; --surface:#1A1A26; --ink:#ECEBF3; --muted:#A4A3B6; --rule:#2C2C3D;
+  --accent:#8DA0FF; --accent-ink:#A9B7FF; --accent-soft:#232B52; --mark:#C99A2E;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:var(--s0);line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1060px;margin:0 auto;padding-inline:clamp(16px,5vw,48px);padding-block:0}
+h1,h2,h3{font-family:var(--display);line-height:1.08;text-wrap:balance;margin:0}
+p,ul,ol{margin:0}
+a{color:inherit;text-decoration-color:var(--accent);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.label{font-family:var(--display);font-size:var(--s-1);font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+
+nav.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+nav.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:10px 16px;padding-block:12px;flex-wrap:wrap}
+nav.top .mark{font-family:var(--display);font-weight:800;font-stretch:112%}
+nav.top ul{display:flex;gap:clamp(12px,3vw,26px);list-style:none;padding:0;flex-wrap:wrap}
+nav.top a{font-family:var(--display);font-size:var(--s-1);text-decoration:none;color:var(--muted)}
+nav.top a:hover{color:var(--ink)}
+
+header.hero{padding-block:clamp(44px,8vw,92px) clamp(32px,5vw,52px)}
+.hero .label{color:var(--accent-ink)}
+.hero h1{font-size:var(--s4);font-weight:800;font-stretch:118%;letter-spacing:-.035em;margin-top:14px;max-width:16ch}
+.hero h1 span{background:linear-gradient(transparent 64%,var(--mark) 64%);padding-inline:.04em}
+.hero .lede{font-size:var(--s1);color:var(--muted);margin-top:20px;max-width:54ch;line-height:1.5}
+.contact{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:26px;align-items:center;font-family:var(--display);font-size:var(--s-1)}
+.contact .item{display:flex;gap:8px;align-items:center;min-width:0}
+.contact .k{color:var(--muted)}
+.copy{font:inherit;font-size:.78rem;border:1px solid var(--rule);background:var(--surface);color:var(--ink);border-radius:999px;padding:3px 10px;cursor:pointer}
+.copy:hover{border-color:var(--accent)}
+
+.proof{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:2px solid var(--ink);border-bottom:1px solid var(--rule)}
+.proof div{padding:20px 18px 22px 0;display:flex;flex-direction:column;gap:6px;min-width:0}
+.proof div + div{padding-left:18px;border-left:1px solid var(--rule)}
+.proof b{font-family:var(--display);font-size:var(--s3);font-weight:800;font-stretch:115%;letter-spacing:-.03em;color:var(--accent-ink);font-variant-numeric:tabular-nums;line-height:1}
+.proof span{font-family:var(--display);color:var(--muted);font-size:.9rem;line-height:1.35}
+@media (max-width:720px){.proof{grid-template-columns:1fr 1fr}.proof div:nth-child(3){border-left:0;padding-left:0}.proof div:nth-child(n+3){border-top:1px solid var(--rule)}}
+
+section{padding-block:clamp(52px,7vw,84px) 0}
+.sec-head{display:flex;flex-direction:column;gap:8px;margin-bottom:26px}
+.sec-head h2{font-size:var(--s3);font-weight:800;font-stretch:110%;letter-spacing:-.02em}
+.sec-head p{color:var(--muted);max-width:62ch}
+
+.cases{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.case{background:var(--surface);border:1px solid var(--rule);border-radius:12px;padding:22px 22px 24px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.case .where{font-family:var(--display);font-size:var(--s-1);color:var(--muted)}
+.case h3{font-size:var(--s1);font-weight:700}
+.case .brief{font-size:.97rem;color:var(--muted);line-height:1.5}
+.case ul{padding-left:1.1em;display:flex;flex-direction:column;gap:6px;font-size:.97rem;line-height:1.5}
+.case .result{margin-top:auto;padding-top:12px;border-top:1px dashed var(--rule);font-family:var(--display);font-size:.92rem}
+.case .result b{color:var(--accent-ink)}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-family:var(--display);font-size:.76rem;font-weight:600;letter-spacing:.03em;padding:3px 9px;border-radius:999px;background:var(--accent-soft);color:var(--accent-ink)}
+@media (max-width:900px){.cases{grid-template-columns:1fr}}
+
+.cal{border:1px solid var(--rule);border-radius:12px;background:var(--surface);overflow-x:auto}
+.cal table{width:100%;border-collapse:collapse;min-width:560px;font-family:var(--display);font-size:.95rem}
+.cal th,.cal td{text-align:left;padding:12px 16px;border-bottom:1px solid var(--rule);vertical-align:top}
+.cal tr:last-child td{border-bottom:0}
+.cal th{font-size:var(--s-1);font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.cal td.when{white-space:nowrap;font-variant-numeric:tabular-nums;color:var(--accent-ink);font-weight:600}
+.cal td.what{font-weight:600}
+.cal td.how{color:var(--muted);font-family:var(--body)}
+
+.projects{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 40px}
+.proj{padding-block:18px;border-top:1px solid var(--rule);min-width:0}
+.proj h3{font-size:1.08rem;font-weight:700}
+.proj .meta{font-family:var(--display);font-size:var(--s-1);color:var(--muted);margin-top:2px}
+.proj p{margin-top:8px;font-size:.97rem;line-height:1.5}
+@media (max-width:760px){.projects{grid-template-columns:1fr}}
+
+.timeline{list-style:none;padding:0;border-left:2px solid var(--rule);margin-left:6px}
+.timeline li{position:relative;padding:0 0 26px 24px}
+.timeline li::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--paper);border:2px solid var(--accent)}
+.timeline .row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:2px 16px;align-items:baseline}
+.timeline h3{font-size:1.08rem;font-weight:700}
+.timeline .dates{font-family:var(--display);font-size:var(--s-1);color:var(--muted);font-variant-numeric:tabular-nums}
+.timeline .org{font-family:var(--display);font-size:.92rem;color:var(--accent-ink)}
+.timeline p{margin-top:6px;font-size:.97rem;max-width:68ch;line-height:1.5}
+
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px 48px}
+@media (max-width:760px){.two{grid-template-columns:1fr}}
+.list{list-style:none;padding:0;display:flex;flex-direction:column}
+.list li{padding-block:12px;border-top:1px solid var(--rule)}
+.list b{font-family:var(--display);font-weight:700}
+.list span{display:block;font-size:.93rem;color:var(--muted);line-height:1.45}
+.skillgroup + .skillgroup{margin-top:18px}
+.skillgroup .label{display:block;margin-bottom:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-family:var(--display);font-size:.86rem;padding:5px 12px;border:1px solid var(--rule);border-radius:999px;background:var(--surface)}
+
+footer{margin-top:clamp(56px,8vw,96px);border-top:2px solid var(--ink)}
+footer .wrap{padding-block:36px 48px;display:flex;flex-direction:column;gap:14px}
+footer h2{font-size:var(--s2);font-weight:800;font-stretch:110%}
+footer p{color:var(--muted);max-width:58ch}
+@media (prefers-reduced-motion:no-preference){.case{transition:transform .2s ease,border-color .2s ease}.case:hover{transform:translateY(-2px);border-color:var(--accent)}}
+</style>
+
+<nav class="top" aria-label="Sections">
+  <div class="wrap">
+    <span class="mark">Siri Ravindra</span>
+    <ul>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#calendar">Calendar</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="label">Marketing · Content · Campaigns · London</p>
+    <h1>Marketing that starts with <span>how people decide.</span></h1>
+    <p class="lede">I plan and deliver campaigns, social media and content for B2B and B2C audiences, from a UK technology start-up to a hospital in Bengaluru. My LSE MSc in Psychology of Economic Life shapes how I read an audience: what they notice, what they trust, and what makes them act.</p>
+    <div class="contact">
+      <div class="item"><span class="k">Email</span> <span id="email">siriravindra05@gmail.com</span> <button class="copy" id="copy-email" data-copy="siriravindra05@gmail.com">Copy</button></div>
+      <div class="item"><span class="k">Phone</span> <span id="phone">+44 7435 167637</span> <button class="copy" id="copy-phone" data-copy="+447435167637">Copy</button></div>
+      <div class="item"><a href="https://www.linkedin.com/in/siri-ravindra/" target="_blank" rel="noopener">LinkedIn</a></div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="proof" aria-label="Results at a glance">
+    <div><b>15+</b><span>campaigns tailored to specific demographics</span></div>
+    <div><b>22%</b><span>increase in engagement at Suguna Hospital</span></div>
+    <div><b>4</b><span>blogs and newsletter features supporting a company OKR</span></div>
+    <div><b>3</b><span>international industry exhibitions: BAPCO, MWC, TCCA</span></div>
+  </div>
+</div>
+
+<main>
+<section id="work">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="label">Selected work</p>
+      <h2>Three campaigns, three audiences</h2>
+      <p>A brand relaunch for a technology company, thought-leadership content for a niche B2B sector, and community health campaigns for patients and families.</p>
+    </div>
+    <div class="cases">
+      <article class="case">
+        <p class="where">UTH-UK · critical communications technology · 2025</p>
+        <h3>Logo 2.0 brand relaunch</h3>
+        <p class="brief">Bringing a refreshed brand to market across every channel the company uses.</p>
+        <ul>
+          <li>Developed, scheduled and delivered multi-platform creatives for the relaunch.</li>
+          <li>Covered LinkedIn, X and the corporate website, alongside event and awareness-day content.</li>
+        </ul>
+        <div class="tags"><span class="tag">LinkedIn</span><span class="tag">X</span><span class="tag">Website</span></div>
+        <p class="result"><b>Outcome:</b> one brand, launched across all company channels.</p>
+      </article>
+      <article class="case">
+        <p class="where">UTH-UK · B2B content · 2025</p>
+        <h3>Blogs and newsletters for a growth OKR</h3>
+        <p class="brief">Building social traction in a specialist sector where buyers are senior and technical.</p>
+        <ul>
+          <li>Wrote 4 blogs and newsletter features on emerging industry themes.</li>
+          <li>Based each piece on desk research and trend analysis.</li>
+          <li>Produced client-specific pitch strategy documents and service brochures alongside.</li>
+        </ul>
+        <div class="tags"><span class="tag">Blog</span><span class="tag">Newsletter</span><span class="tag">Sales collateral</span></div>
+        <p class="result"><b>Outcome:</b> content supporting a company OKR to grow social traction.</p>
+      </article>
+      <article class="case">
+        <p class="where">Suguna Hospital · healthcare · 2022–23</p>
+        <h3>Community health campaigns</h3>
+        <p class="brief">Reaching different patient groups with the right message for each.</p>
+        <ul>
+          <li>Ran 15+ campaigns tailored to specific demographics: wellness camps, blood donation drives and health check-up days.</li>
+          <li>Used CRM data, patient feedback and on-site research at 5+ competing providers to shape them.</li>
+        </ul>
+        <div class="tags"><span class="tag">Social media</span><span class="tag">Events</span><span class="tag">CRM insight</span></div>
+        <p class="result"><b>Outcome:</b> a <b>22% increase in engagement</b>.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="calendar">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="label">Content calendar</p>
+      <h2>Moments I've planned content around</h2>
+      <p>Awareness days and industry events from my work at UTH-UK, each with its own creative and channel plan.</p>
+    </div>
+    <div class="cal">
+      <table>
+        <thead><tr><th scope="col">When</th><th scope="col">Moment</th><th scope="col">What I did</th></tr></thead>
+        <tbody>
+          <tr><td class="when">28 Jan</td><td class="what">Data Privacy Day</td><td class="how">Awareness-day content for LinkedIn, X and the website.</td></tr>
+          <tr><td class="when">17 May</td><td class="what">World Telecommunication and Information Society Day</td><td class="how">Awareness-day content for LinkedIn, X and the website.</td></tr>
+          <tr><td class="when">Event season</td><td class="what">BAPCO, MWC, TCCA</td><td class="how">Researched and enrolled in the exhibitions, and created content for the company's presence there.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="research">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="label">Research and strategy</p>
+      <h2>Projects on consumer behaviour</h2>
+      <p>From my MSc and degree: the thinking behind the campaigns.</p>
+    </div>
+    <div class="projects">
+      <div class="proj"><h3>Rise and Fall of BYJU's</h3><p class="meta">EdTech marketing case study</p><p>Analysed the brand's marketing strategy, consumer sentiment and positioning, and recommended alternative brand narratives grounded in social psychology.</p></div>
+      <div class="proj"><h3>Sustainable meal deals</h3><p class="meta">Pitch to a government social research team</p><p>Proposed a sustainable approach to budget meal deals, addressing the plastic they generate and the junk food and sugar they offer, with healthier options in their place.</p></div>
+      <div class="proj"><h3>George IV pub</h3><p class="meta">Customer experience field research</p><p>Mapped the customer journey through in-person observation and recommended digital ordering and payment, clearer signage, a loyalty programme and weekly events.</p></div>
+      <div class="proj"><h3>Broker Insights website</h3><p class="meta">Behavioural audit</p><p>Reviewed the site through a behavioural lens and made recommendations to improve how visitors engage with it.</p></div>
+      <div class="proj"><h3>Environmental ethics and buying</h3><p class="meta">Consumer survey</p><p>Surveyed working and non-working women using an Environmental Ethics Scale to find the factors behind their purchasing decisions.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="label">Experience</p>
+      <h2>Where I've worked</h2>
+    </div>
+    <ol class="timeline">
+      <li>
+        <div class="row"><h3>Junior Sales and Marketing Specialist</h3><span class="dates">Feb 2025 – Present</span></div>
+        <p class="org">UTH-UK Limited, Bristol</p>
+        <p>Brand relaunch creatives, blogs, newsletters, awareness-day and event content, plus outreach to senior industry stakeholders. Contributed to 4 commercial collaborations, including Ricoh, Inrico and Critical Communications Finland.</p>
+      </li>
+      <li>
+        <div class="row"><h3>Digital Marketing Executive</h3><span class="dates">Sep 2022 – Sep 2023</span></div>
+        <p class="org">Suguna Hospital, Bengaluru</p>
+        <p>15+ demographic-specific campaigns, social media content and competitor research, working with Marketing, Sales and HR.</p>
+      </li>
+      <li>
+        <div class="row"><h3>Digital Marketing Intern</h3><span class="dates">Jun 2021 – Nov 2021</span></div>
+        <p class="org">The Stage Community, Bengaluru</p>
+        <p>Organised soft-skills webinars and developed marketing strategies to grow their reach.</p>
+      </li>
+      <li>
+        <div class="row"><h3>Sales Intern</h3><span class="dates">Jul 2021 – Oct 2021</span></div>
+        <p class="org">Swadeshi Farms, Bengaluru</p>
+        <p>Ran a campaign for handcrafted products that converted 20+ buyers and contributed to 15% sales growth.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <div class="wrap two">
+    <div>
+      <p class="label">Education and learning</p>
+      <ul class="list" style="margin-top:12px">
+        <li><b>MSc Psychology of Economic Life</b><span>London School of Economics · 2023–24 · Merit</span></li>
+        <li><b>BA Psychology, Economics and Sociology</b><span>Mount Carmel College · 2019–22 · 1st Class Exemplary, GPA 8.6/10</span></li>
+        <li><b>McKinsey Forward Program</b><span>Nov–Dec 2025 · structured problem solving and communication</span></li>
+        <li><b>UX and design training</b><span>David Travis UX course · Figma Design Essentials · Essential UX/UI Design (Udemy, 2025)</span></li>
+        <li><b>Humanities Association Secretary</b><span>Represented 300+ students and led Manan, a festival of 30+ events</span></li>
+      </ul>
+    </div>
+    <div>
+      <p class="label">Skills</p>
+      <div style="margin-top:14px">
+        <div class="skillgroup"><span class="label">Marketing</span><div class="chips"><span class="chip">Multi-channel campaigns</span><span class="chip">Social media</span><span class="chip">Content and copywriting</span><span class="chip">Blogs and newsletters</span><span class="chip">Brand relaunch</span><span class="chip">Event marketing</span></div></div>
+        <div class="skillgroup"><span class="label">Insight</span><div class="chips"><span class="chip">Market and competitor research</span><span class="chip">Audience segmentation</span><span class="chip">Consumer behaviour</span><span class="chip">CRM data analysis</span></div></div>
+        <div class="skillgroup"><span class="label">Tools</span><div class="chips"><span class="chip">HubSpot</span><span class="chip">Google Sheets</span><span class="chip">Excel</span><span class="chip">Microsoft Office</span><span class="chip">Figma (beginner)</span><span class="chip">Claude</span><span class="chip">LinkedIn</span><span class="chip">X</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <p class="label">Contact</p>
+    <h2>Looking for a marketing role in London.</h2>
+    <p>I'd be glad to talk about campaigns, content or the research behind them.</p>
+    <div class="contact" style="margin-top:6px">
+      <div class="item"><span class="k">Email</span> <span>siriravindra05@gmail.com</span> <button class="copy" id="copy-email-2" data-copy="siriravindra05@gmail.com">Copy</button></div>
+      <div class="item"><span class="k">Phone</span> <span>+44 7435 167637</span> <button class="copy" id="copy-phone-2" data-copy="+447435167637">Copy</button></div>
+      <div class="item"><a href="https://www.linkedin.com/in/siri-ravindra/" target="_blank" rel="noopener">LinkedIn profile</a></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.copy').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var text = btn.getAttribute('data-copy');
+    var done = function(){ btn.textContent = 'Copied'; setTimeout(function(){ btn.textContent = 'Copy'; }, 1600); };
+    var fallback = function(){
+      var span = btn.previousElementSibling;
+      if (!span) return;
+      var r = document.createRange(); r.selectNodeContents(span);
+      var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+      btn.textContent = 'Selected';
+      setTimeout(function(){ btn.textContent = 'Copy'; }, 1600);
+    };
+    try { navigator.clipboard.writeText(text).then(done, fallback); } catch(e){ fallback(); }
+  });
+});
+</script>
+
+</body></html>

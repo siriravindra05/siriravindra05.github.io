@@ -3,316 +3,449 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Siri Ravindra: sales, client management and business development. London.">
-<style>body{margin:0}img{max-width:100%}</style>
-<title>Siri Ravindra | Sales &amp; Business Development</title>
+<meta name="description" content="Siri Ravindra: B2B sales, client management and business development. London.">
+<title>Siri Ravindra</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
 <style>
-/* Layout: recruiter scan order. Proof strip, sales cycle, two deep dives, one-line "more work" grid, compact timeline, skills chips */
+/* Concept: a partnership file. A business-card hero, a bento of real counts drawn as dots,
+   a transit-style career map, a dark "deal room" band for the UTH-UK pipeline,
+   and the buyer-psychology audit set as an annotated page. One green accent throughout. */
 :root{
-  --paper:#F5F6FA;
-  --surface:#FFFFFF;
-  --ink:#15203A;
-  --muted:#596379;
-  --rule:#D9DEE9;
-  --accent:#E2911C;
-  --accent-ink:#8F5300;
-  --accent-soft:#FCEFD9;
-  --teal:#1E6B74;
-  --teal-soft:#DDF0F1;
-  --display:"Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
-  --body:"Newsreader", Georgia, "Times New Roman", serif;
-  --step--1:0.84rem; --step-0:1.06rem; --step-1:1.25rem; --step-2:1.6rem; --step-3:2.2rem; --step-4:clamp(2.4rem, 6.4vw, 4.2rem);
+  --paper:#F4F3EE;
+  --sheet:#FFFFFF;
+  --ink:#15171C;
+  --soft:#5B5F6B;
+  --faint:#8D909A;
+  --line:#E1DFD7;
+  --accent:#1D5C4D;
+  --accent-wash:#DCEBE5;
+  --mark:#F3DE8A;
+  --night:#14201C;
+  --night-2:#1C2B26;
+  --night-ink:#EEF3F0;
+  --night-soft:#A7B8B1;
+  --night-line:#2E3F39;
+  --serif:"Instrument Serif", "Iowan Old Style", Georgia, serif;
+  --sans:"Geist", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --mono:"Geist Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
-    --paper:#0F1525; --surface:#161E33; --ink:#E7EBF4; --muted:#9BA5BB; --rule:#28324C;
-    --accent:#F0A63A; --accent-ink:#F4B65C; --accent-soft:#3A2C14; --teal:#6CC2C9; --teal-soft:#16343A;
+    --paper:#111413; --sheet:#191D1B; --ink:#ECEEEA; --soft:#A9ADA9; --faint:#7D827E; --line:#2A2F2C;
+    --accent:#7FC4AE; --accent-wash:#1B2E28; --mark:#5C4F1E;
+    --night:#0B1210; --night-2:#14201C; --night-ink:#EEF3F0; --night-soft:#A7B8B1; --night-line:#26352F;
     color-scheme:dark;
   }
 }
 :root[data-theme="dark"]{
-  --paper:#0F1525; --surface:#161E33; --ink:#E7EBF4; --muted:#9BA5BB; --rule:#28324C;
-  --accent:#F0A63A; --accent-ink:#F4B65C; --accent-soft:#3A2C14; --teal:#6CC2C9; --teal-soft:#16343A;
+  --paper:#111413; --sheet:#191D1B; --ink:#ECEEEA; --soft:#A9ADA9; --faint:#7D827E; --line:#2A2F2C;
+  --accent:#7FC4AE; --accent-wash:#1B2E28; --mark:#5C4F1E;
+  --night:#0B1210; --night-2:#14201C; --night-ink:#EEF3F0; --night-soft:#A7B8B1; --night-line:#26352F;
   color-scheme:dark;
 }
 *{box-sizing:border-box}
-body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:var(--step-0);line-height:1.55;-webkit-font-smoothing:antialiased}
-.wrap{max-width:1040px;margin:0 auto;padding-inline:clamp(16px,5vw,48px);padding-block:0}
-h1,h2,h3,h4{font-family:var(--display);line-height:1.12;text-wrap:balance;margin:0}
-p{margin:0}
-ul{margin:0}
-a{color:inherit;text-decoration-color:var(--accent);text-underline-offset:3px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+p,ul,ol,dl,dd,h1,h2,h3,figure,blockquote{margin:0}
+a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:4px;transition:text-decoration-color .15s ease-out}
+a:hover{text-decoration-color:var(--accent)}
 a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
-.label{font-family:var(--display);font-size:var(--step--1);font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:clamp(16px,5vw,56px)}
+.mono{font-family:var(--mono)}
+.kicker{font-family:var(--mono);font-size:.74rem;color:var(--faint);letter-spacing:.02em}
+h2.sec{font-family:var(--serif);font-weight:400;font-size:clamp(2rem,4vw,2.7rem);line-height:1.05;letter-spacing:-.01em}
+.sec-row{display:flex;justify-content:space-between;align-items:end;gap:8px 24px;flex-wrap:wrap;margin-bottom:28px}
+.sec-row p{color:var(--soft);max-width:46ch;font-size:.97rem}
+section{padding-block:clamp(64px,9vw,112px) 0}
 
-/* nav */
-nav.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--paper) 90%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
-nav.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px 16px;padding-block:12px;flex-wrap:wrap}
-nav.top .mark{font-family:var(--display);font-weight:800}
-nav.top ul{display:flex;gap:clamp(12px,3vw,26px);list-style:none;padding:0;flex-wrap:wrap}
-nav.top a{font-family:var(--display);font-size:var(--step--1);text-decoration:none;color:var(--muted)}
-nav.top a:hover{color:var(--ink)}
+/* top bar */
+.bar-top{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar-top .wrap{display:flex;justify-content:space-between;align-items:center;gap:10px 20px;padding-block:12px;flex-wrap:wrap}
+.monogram{font-family:var(--serif);font-size:1.35rem;line-height:1;text-decoration:none}
+.bar-top nav{display:flex;gap:clamp(12px,2.6vw,26px);flex-wrap:wrap;font-size:.88rem}
+.bar-top nav a{text-decoration:none;color:var(--soft)}
+.bar-top nav a:hover{color:var(--ink)}
 
 /* hero */
-header.hero{padding-block:clamp(44px,8vw,88px) clamp(32px,5vw,52px)}
-.hero .label{color:var(--accent-ink)}
-.hero h1{font-size:var(--step-4);font-weight:800;letter-spacing:-.03em;margin-top:12px;max-width:15ch}
-.hero h1 em{font-style:normal;background:linear-gradient(transparent 62%,var(--accent-soft) 62%);padding-inline:.06em}
-.hero .lede{font-size:var(--step-1);color:var(--muted);margin-top:18px;max-width:52ch;line-height:1.45}
-.contact{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:24px;align-items:center;font-family:var(--display);font-size:var(--step--1)}
-.contact .item{display:flex;gap:8px;align-items:center}
-.contact .k{color:var(--muted)}
-.copy{font:inherit;font-size:.78rem;border:1px solid var(--rule);background:var(--surface);color:var(--ink);border-radius:999px;padding:3px 10px;cursor:pointer}
-.copy:hover{border-color:var(--accent)}
+.hero{padding-block:clamp(48px,8vw,96px) 0;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.9fr);gap:clamp(36px,6vw,72px);align-items:center}
+@media (max-width:880px){.hero{grid-template-columns:1fr}}
+.status{display:inline-flex;align-items:center;gap:9px;font-size:.84rem;color:var(--accent);background:var(--accent-wash);padding:5px 13px 5px 11px;border-radius:999px}
+.status i{flex:none;width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 0 color-mix(in srgb,var(--accent) 50%,transparent)}
+@media (prefers-reduced-motion:no-preference){.status i{animation:pulse 2.4s ease-out infinite}@keyframes pulse{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--accent) 45%,transparent)}70%{box-shadow:0 0 0 9px transparent}100%{box-shadow:0 0 0 0 transparent}}}
+.hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(3rem,7.6vw,5.6rem);line-height:.98;letter-spacing:-.02em;margin-top:22px;text-wrap:balance}
+.hero h1 em{color:var(--accent)}
+.hero .lede{margin-top:22px;font-size:1.08rem;color:var(--soft);max-width:52ch}
+.hero .lede b{color:var(--ink);font-weight:500}
 
-/* proof strip */
-.proof{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
-.proof div{padding:20px 18px 20px 0;display:flex;flex-direction:column;gap:4px;min-width:0}
-.proof div + div{padding-left:18px;border-left:1px solid var(--rule)}
-.proof b{font-family:var(--display);font-size:var(--step-3);font-weight:800;letter-spacing:-.03em;color:var(--accent-ink);font-variant-numeric:tabular-nums;line-height:1}
-.proof span{font-family:var(--display);color:var(--muted);font-size:.9rem;line-height:1.35}
-@media (max-width:720px){.proof{grid-template-columns:1fr 1fr}.proof div:nth-child(3){border-left:0;padding-left:0}.proof div:nth-child(n+3){border-top:1px solid var(--rule)}}
+/* business card */
+.card-stage{display:flex;justify-content:center;padding-block:12px}
+.bcard{width:min(100%,400px);aspect-ratio:1.62/1;background:var(--sheet);border:1px solid var(--line);border-radius:14px;padding:clamp(18px,3.4vw,26px);display:flex;flex-direction:column;justify-content:space-between;transform:rotate(-2.2deg);box-shadow:0 1px 0 var(--line),0 22px 44px -18px color-mix(in srgb,var(--accent) 35%,transparent);position:relative;transition:transform .3s ease-out}
+.bcard:hover{transform:rotate(0deg)}
+.bcard::before{content:"";position:absolute;inset:auto 0 0 0;height:6px;border-radius:0 0 14px 14px;background:var(--accent)}
+.bcard .who{display:flex;justify-content:space-between;align-items:start;gap:12px}
+.bcard .name{font-family:var(--serif);font-size:clamp(1.6rem,4vw,2rem);line-height:1}
+.bcard .title{font-size:.82rem;color:var(--soft);margin-top:6px}
+.bcard .sr{flex:none;width:44px;height:44px;border-radius:50%;border:1.5px solid var(--accent);display:grid;place-items:center;font-family:var(--serif);font-style:italic;font-size:1.2rem;color:var(--accent)}
+.bcard dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:3px 12px;font-size:.84rem;align-items:center}
+.bcard dt{font-family:var(--mono);font-size:.68rem;color:var(--faint)}
+.bcard dd{min-width:0;overflow-wrap:anywhere;display:flex;gap:8px;align-items:center}
+.copy{font:500 .7rem var(--sans);color:var(--soft);background:transparent;border:1px solid var(--line);border-radius:6px;padding:0 7px;cursor:pointer;line-height:1.7}
+.copy:hover{color:var(--ink);border-color:var(--soft)}
 
-section{padding-block:clamp(48px,7vw,80px) 0}
-.sec-head{display:flex;flex-direction:column;gap:8px;margin-bottom:24px}
-.sec-head h2{font-size:var(--step-3);font-weight:800;letter-spacing:-.02em}
-.sec-head p{color:var(--muted);max-width:60ch}
+/* bento */
+.bento{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px;margin-top:clamp(48px,7vw,80px)}
+.tile{background:var(--sheet);border:1px solid var(--line);border-radius:14px;padding:20px;min-width:0;display:flex;flex-direction:column;gap:12px}
+.tile .n{font-family:var(--serif);font-size:clamp(2.6rem,5vw,3.4rem);line-height:.9}
+.tile .n small{font-size:.5em;color:var(--accent)}
+.tile .cap{font-size:.9rem;color:var(--soft);line-height:1.4}
+.tile .cap b{color:var(--ink);font-weight:500}
+.t-partners{grid-column:span 3;background:var(--accent);border-color:var(--accent);color:var(--sheet)}
+.t-partners .cap{color:color-mix(in srgb,var(--sheet) 82%,transparent)}
+.t-partners .cap b{color:var(--sheet)}
+.wordmarks{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:auto;padding-top:14px;border-top:1px solid color-mix(in srgb,var(--sheet) 25%,transparent);font-family:var(--serif);font-size:1.25rem}
+.t-people{grid-column:span 3}
+.t-eng{grid-column:span 2}
+.t-buyers{grid-column:span 2}
+.t-events{grid-column:span 2}
+@media (max-width:880px){.t-partners,.t-people{grid-column:span 6}.t-eng,.t-buyers,.t-events{grid-column:span 3}.t-events{grid-column:span 6}}
+@media (max-width:520px){.bento{grid-template-columns:1fr}.tile{grid-column:auto!important}}
+.dots{display:grid;grid-template-columns:repeat(15,minmax(0,1fr));gap:5px;margin-top:auto;max-width:360px}
+.dots i{aspect-ratio:1;border-radius:50%;background:var(--accent)}
+.dots.d20{grid-template-columns:repeat(10,minmax(0,1fr));max-width:220px}
+.dots i.more{background:transparent;border:1.5px dashed var(--accent)}
+.meter{margin-top:auto;height:10px;border-radius:999px;background:var(--accent-wash);overflow:hidden}
+.meter span{display:block;height:100%;border-radius:999px;background:var(--accent)}
+.meter-scale{display:flex;justify-content:space-between;font-family:var(--mono);font-size:.66rem;color:var(--faint);margin-top:-4px}
+.stamps{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}
+.stamp{font-family:var(--mono);font-size:.78rem;font-weight:500;letter-spacing:.06em;border:1.5px solid var(--ink);border-radius:6px;padding:4px 10px;transform:rotate(var(--r,0deg))}
 
-/* sales cycle */
-.cycle{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;border:1px solid var(--rule);border-radius:10px;background:var(--surface);overflow:hidden;list-style:none;padding:0}
-.cycle li{padding:16px 16px 18px;min-width:0;position:relative}
-.cycle li + li{border-left:1px solid var(--rule)}
-.cycle .n{font-family:var(--display);font-size:.75rem;font-weight:600;letter-spacing:.08em;color:var(--accent-ink)}
-.cycle h3{font-size:1.08rem;margin:4px 0 6px}
-.cycle p{font-size:.93rem;color:var(--muted);line-height:1.4}
-@media (max-width:820px){.cycle{grid-template-columns:1fr}.cycle li + li{border-left:0;border-top:1px solid var(--rule)}.cycle li{display:grid;grid-template-columns:110px minmax(0,1fr);gap:4px 16px}.cycle li p{grid-column:2}.cycle .n{grid-row:span 2}}
+/* transit career map */
+.map{background:var(--sheet);border:1px solid var(--line);border-radius:14px;padding:22px 22px 18px;overflow-x:auto}
+.map-inner{min-width:660px;position:relative}
+.line-row{display:grid;grid-template-columns:62px minmax(0,1fr);align-items:center;gap:12px;height:74px}
+.line-k{font-family:var(--mono);font-size:.72rem;color:var(--faint)}
+.rail{position:relative;height:100%}
+.rail::before{content:"";position:absolute;left:0;right:0;top:50%;height:2px;background:repeating-linear-gradient(90deg,var(--line) 0 6px,transparent 6px 12px);transform:translateY(-50%)}
+.seg{position:absolute;top:50%;height:8px;transform:translateY(-50%);border-radius:999px;background:var(--ink)}
+.work .seg{background:var(--accent)}
+.seg::before,.seg::after{content:"";position:absolute;top:50%;width:14px;height:14px;border-radius:50%;background:var(--sheet);border:3px solid currentColor;transform:translate(-50%,-50%)}
+.seg::before{left:0}.seg::after{left:100%}
+.study .seg{color:var(--ink)}.work .seg{color:var(--accent)}
+.seg.live::after{background:currentColor;box-shadow:0 0 0 4px var(--accent-wash)}
+.stop{position:absolute;font-size:.8rem;line-height:1.25;white-space:nowrap}
+.stop b{font-weight:600;display:block}
+.stop span{font-family:var(--mono);font-size:.68rem;color:var(--faint)}
+.stop.up{bottom:calc(50% + 14px)}
+.stop.down{top:calc(50% + 14px)}
+.years{display:grid;grid-template-columns:62px minmax(0,1fr);gap:12px;margin-top:22px}
+.years div{position:relative;height:16px;border-top:1px solid var(--line)}
+.years span{position:absolute;top:4px;transform:translateX(-50%);font-family:var(--mono);font-size:.68rem;color:var(--faint)}
+.map-note{font-size:.82rem;color:var(--faint);margin-top:10px}
 
-/* featured */
-.feature{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);gap:24px 48px;padding-block:32px;border-top:1px solid var(--rule)}
-.feature:first-of-type{border-top:0;padding-top:0}
-.feature .kind{color:var(--accent-ink)}
-.feature h3{font-size:var(--step-2);font-weight:700;letter-spacing:-.015em;margin-top:8px}
-.feature .sum{margin-top:12px;color:var(--muted)}
-.result{margin-top:18px;display:flex;flex-wrap:wrap;gap:8px}
-.pill{font-family:var(--display);font-size:.8rem;padding:4px 11px;border-radius:999px;background:var(--teal-soft);color:var(--teal)}
-.pill.hot{background:var(--accent-soft);color:var(--accent-ink);font-weight:600}
-.feature ul.did{padding-left:1.1em;display:flex;flex-direction:column;gap:8px}
-.feature ul.did b{font-family:var(--display);font-weight:600}
-.lenses{display:flex;flex-direction:column;border-top:1px solid var(--rule)}
-.lens-row{display:grid;grid-template-columns:140px minmax(0,1fr);gap:4px 18px;padding-block:12px;border-bottom:1px solid var(--rule)}
-.lens-row h4{font-size:.95rem;color:var(--teal);padding-top:2px}
-.lens-row p{font-size:.97rem}
-.lens-row q{font-style:italic;color:var(--muted)}
-@media (max-width:760px){.feature{grid-template-columns:1fr}}
-@media (max-width:460px){.lens-row{grid-template-columns:1fr}}
+/* deal room (dark band) */
+.dealroom{margin-top:clamp(64px,9vw,112px);background:var(--night);color:var(--night-ink);padding-block:clamp(56px,8vw,96px)}
+.dealroom .kicker{color:var(--night-soft)}
+.dealroom h2.sec{color:var(--night-ink)}
+.dealroom .sec-row p{color:var(--night-soft)}
+.deal-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:clamp(28px,5vw,56px);align-items:start}
+@media (max-width:880px){.deal-grid{grid-template-columns:1fr}}
+.role-card{border:1px solid var(--night-line);border-radius:14px;padding:22px;background:var(--night-2)}
+.role-card h3{font-size:1.1rem;font-weight:600}
+.role-card .mono{font-size:.74rem;color:var(--night-soft);margin-top:4px;display:block}
+.role-card p{margin-top:14px;color:var(--night-soft);font-size:.97rem}
+.role-card dl{margin-top:18px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px 16px;font-size:.92rem;border-top:1px solid var(--night-line);padding-top:16px}
+.role-card dt{font-family:var(--mono);font-size:.7rem;color:var(--night-soft);padding-top:3px}
+.pipeline{list-style:none;padding:0;display:flex;flex-direction:column;gap:10px;counter-reset:st}
+.stage{display:grid;grid-template-columns:minmax(0,180px) minmax(0,1fr);gap:6px 20px;align-items:center;padding:16px 18px;border-radius:12px;background:var(--night-2);border:1px solid var(--night-line);position:relative}
+.stage .bar{height:34px;border-radius:8px;background:color-mix(in srgb,var(--accent) 30%,var(--night-2));display:flex;align-items:center;padding-inline:12px;font-family:var(--mono);font-size:.74rem;color:var(--night-ink);overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.stage h3{font-size:1rem;font-weight:600}
+.stage p{font-size:.88rem;color:var(--night-soft);line-height:1.4;grid-column:1/-1}
+.stage:nth-child(1) .bar{width:100%}
+.stage:nth-child(2) .bar{width:84%}
+.stage:nth-child(3) .bar{width:68%}
+.stage.won{background:var(--accent);border-color:var(--accent);color:var(--sheet)}
+.stage.won .bar{width:52%;background:var(--night);color:var(--night-ink)}
+.stage.won p{color:color-mix(in srgb,var(--sheet) 85%,transparent)}
+@media (max-width:560px){.stage{grid-template-columns:1fr}.stage .bar{width:100%!important}}
+.funnel-note{font-size:.8rem;color:var(--night-soft);margin-top:10px}
+.also{margin-top:28px;display:flex;gap:10px;flex-wrap:wrap;font-size:.9rem;color:var(--night-soft)}
+.also b{color:var(--night-ink);font-weight:500}
 
-/* more work */
-.more{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
-.card.wide{grid-column:span 2}
-@media (max-width:820px){.more{grid-template-columns:1fr}.card.wide{grid-column:auto}}
-.card{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:18px 18px 20px;display:flex;flex-direction:column;gap:8px;min-width:0}
-.card .label{font-size:.74rem}
-.card h3{font-size:1.12rem;font-weight:700}
-.card p{font-size:.97rem;color:var(--muted);line-height:1.45}
-.card .stat{font-family:var(--display);font-weight:700;color:var(--accent-ink);font-variant-numeric:tabular-nums}
-.card ul{padding-left:1.05em;font-size:.97rem;color:var(--muted);display:flex;flex-direction:column;gap:4px}
-.card ul b{color:var(--ink);font-weight:500}
+/* annotated audit */
+.page-sheet{background:var(--sheet);border:1px solid var(--line);border-radius:14px;padding:clamp(20px,4vw,40px);display:flex;flex-direction:column;gap:26px;position:relative}
+.page-sheet::before{content:"Broker Insights website · annotated";position:absolute;top:-11px;left:22px;background:var(--paper);padding-inline:8px;font-family:var(--mono);font-size:.7rem;color:var(--faint)}
+.note-row{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:10px 32px;align-items:center}
+@media (max-width:720px){.note-row{grid-template-columns:1fr}}
+.note-row blockquote{font-family:var(--serif);font-size:clamp(1.35rem,2.6vw,1.8rem);line-height:1.2}
+.note-row mark{background:linear-gradient(transparent 55%,var(--mark) 55%);color:inherit;padding-inline:.04em}
+.note{border-left:2px solid var(--accent);padding:4px 0 4px 16px;position:relative}
+.note::before{content:"";position:absolute;left:-34px;top:50%;width:30px;border-top:1px dashed var(--accent)}
+@media (max-width:720px){.note::before{display:none}}
+.note b{display:block;font-size:.8rem;font-family:var(--mono);color:var(--accent);font-weight:500;letter-spacing:.02em}
+.note span{font-size:.95rem;color:var(--soft)}
 
-/* timeline */
-.timeline{display:flex;flex-direction:column;border-top:1px solid var(--rule)}
-.tl{display:grid;grid-template-columns:150px minmax(0,1fr) auto;gap:4px 24px;padding-block:14px;border-bottom:1px solid var(--rule);align-items:baseline}
-.tl .when{font-family:var(--display);font-size:var(--step--1);color:var(--muted);font-variant-numeric:tabular-nums}
-.tl h3{font-size:1.05rem;font-weight:600}
-.tl .org{color:var(--muted);font-size:.95rem}
-.tl .tagline{font-family:var(--display);font-size:.82rem;color:var(--accent-ink);text-align:right}
-@media (max-width:640px){.tl{grid-template-columns:1fr}.tl .tagline{text-align:left}}
+/* earlier roles */
+.earlier{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:clamp(24px,4vw,40px);align-items:start}
+@media (max-width:880px){.earlier{grid-template-columns:1fr}}
+.growth{background:var(--sheet);border:1px solid var(--line);border-radius:14px;padding:22px}
+.growth h3{font-size:1rem;font-weight:600}
+.growth .sub{font-size:.82rem;color:var(--faint)}
+.g-row{margin-top:20px}
+.g-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.g-head span{font-size:.9rem}
+.g-head small{display:block;color:var(--faint);font-size:.78rem}
+.g-head b{font-family:var(--serif);font-weight:400;font-size:2.2rem;line-height:1;color:var(--accent)}
+.g-track{margin-top:8px;height:12px;border-radius:999px;background:var(--accent-wash);overflow:hidden}
+.g-track span{display:block;height:100%;background:var(--accent);border-radius:999px}
+@media (prefers-reduced-motion:no-preference){.g-track span,.meter span{animation:grow 1s ease-out both}@keyframes grow{from{width:0}}}
+.g-scale{display:flex;justify-content:space-between;font-family:var(--mono);font-size:.66rem;color:var(--faint);margin-top:14px;border-top:1px solid var(--line);padding-top:6px}
+.roles{display:flex;flex-direction:column;gap:12px}
+.role{background:var(--sheet);border:1px solid var(--line);border-radius:14px;padding:18px 20px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 16px}
+.role .ico{grid-row:span 3;width:40px;height:40px;border-radius:10px;background:var(--accent-wash);color:var(--accent);display:grid;place-items:center;font-family:var(--serif);font-size:1.2rem}
+.role .head{display:flex;justify-content:space-between;align-items:baseline;gap:4px 12px;flex-wrap:wrap}
+.role h3{font-size:1rem;font-weight:600}
+.role .when{font-family:var(--mono);font-size:.72rem;color:var(--faint);white-space:nowrap}
+.role .org{font-size:.88rem;color:var(--soft)}
+.role p{font-size:.94rem;margin-top:4px}
+.role .num{font-family:var(--mono);color:var(--accent);font-weight:500}
 
-/* skills */
-.chips{display:flex;flex-wrap:wrap;gap:8px}
-.chip{font-family:var(--display);font-size:.88rem;padding:6px 12px;border-radius:999px;border:1px solid var(--rule);background:var(--surface)}
-.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px 36px}
-.skills-grid h3{font-size:1rem;margin-bottom:10px}
+/* study */
+.study-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+@media (max-width:880px){.study-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.study-grid{grid-template-columns:1fr}}
+.study-grid .tile h3{font-size:1rem;font-weight:600}
+.study-grid .tile p{font-size:.92rem;color:var(--soft)}
+.study-grid .deg{grid-column:span 1;border-top:4px solid var(--ink)}
+.study-grid .deg .big{font-family:var(--serif);font-size:1.7rem;line-height:1}
 
-footer{margin-top:clamp(56px,8vw,96px);border-top:1px solid var(--rule);padding-block:36px 52px}
-footer h2{font-size:var(--step-3);font-weight:800;letter-spacing:-.02em;max-width:20ch}
-@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+/* footer */
+footer{margin-top:clamp(72px,10vw,120px);border-top:1px solid var(--line)}
+footer .wrap{padding-block:clamp(40px,6vw,64px);display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:28px 48px;align-items:end}
+@media (max-width:760px){footer .wrap{grid-template-columns:1fr}}
+footer p.big{font-family:var(--serif);font-size:clamp(2rem,4.6vw,3.2rem);line-height:1.05;letter-spacing:-.01em}
+.links{display:flex;flex-direction:column;gap:8px}
+.btn{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 16px;border:1px solid var(--line);border-radius:10px;background:var(--sheet);text-decoration:none;font-size:.95rem;min-width:0}
+.btn span{overflow-wrap:anywhere}
+.btn small{font-family:var(--mono);font-size:.7rem;color:var(--faint);flex:none}
+.btn:hover{border-color:var(--accent)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--sheet)}
+.btn.primary small{color:color-mix(in srgb,var(--sheet) 75%,transparent)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
 </head>
 <body>
 
-<nav class="top" aria-label="Sections">
+<header class="bar-top">
   <div class="wrap">
-    <span class="mark">Siri Ravindra</span>
-    <ul>
-      <li><a href="#how">How I work</a></li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </div>
-</nav>
-
-<header class="hero">
-  <div class="wrap">
-    <span class="label">Sales · Client &amp; account management · Business development · London</span>
-    <h1>I turn conversations into <em>lasting partnerships</em>.</h1>
-    <p class="lede">20 months building B2B partnerships at a UK tech start-up, backed by an LSE MSc in how people make economic decisions.</p>
-    <div class="contact">
-      <div class="item"><span class="k">Email</span><span id="email">siriravindra05@gmail.com</span><button class="copy" type="button" data-copy="email">Copy</button></div>
-      <div class="item"><span class="k">Phone</span><span>+44 7435 167637</span></div>
-      <div class="item"><a href="https://www.linkedin.com/in/siri-ravindra/" target="_blank" rel="noopener">LinkedIn ↗</a></div>
-    </div>
+    <a class="monogram" href="#top">Siri Ravindra</a>
+    <nav aria-label="Sections">
+      <a href="#journey">Journey</a>
+      <a href="#uth">Partnerships</a>
+      <a href="#audit">Buyer psychology</a>
+      <a href="#earlier">Earlier work</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </div>
 </header>
 
-<div class="wrap">
-  <div class="proof">
-    <div><b>4</b><span>commercial collaborations, incl. Ricoh</span></div>
-    <div><b>15+</b><span>senior decision-makers engaged</span></div>
-    <div><b>22%</b><span>increase in engagement from 15+ campaigns</span></div>
-    <div><b>20+</b><span>buyers converted, +15% sales</span></div>
+<div class="wrap" id="top">
+  <div class="hero">
+    <div>
+      <span class="status"><i></i>Open to sales, account management and business development roles</span>
+      <h1>I find the right people and turn conversations into <em>partnerships</em>.</h1>
+      <p class="lede"><b>B2B sales and partnerships</b> at UTH-UK, a critical communications technology start-up. Before that, healthcare campaigns in Bengaluru and an MSc at LSE in why people make the economic choices they do. Based in London.</p>
+    </div>
+    <div class="card-stage">
+      <div class="bcard">
+        <div class="who">
+          <div><div class="name">Siri Ravindra</div><div class="title">Sales &amp; Partnerships · London</div></div>
+          <span class="sr" aria-hidden="true">SR</span>
+        </div>
+        <dl>
+          <dt>Email</dt><dd><span id="email">siriravindra05@gmail.com</span><button class="copy" type="button" data-copy="email">Copy</button></dd>
+          <dt>Phone</dt><dd>+44 7435 167637</dd>
+          <dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/siri-ravindra/" target="_blank" rel="noopener">in/siri-ravindra</a></dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+
+  <div class="bento" aria-label="Results at a glance">
+    <div class="tile t-partners">
+      <span class="kicker" style="color:inherit;opacity:.75">UTH-UK · 2025–now</span>
+      <div class="n">4</div>
+      <p class="cap"><b>Commercial collaborations</b> I helped secure for a UK tech start-up.</p>
+      <div class="wordmarks"><span>Ricoh</span><span>Inrico</span><span>Critical Communications Finland</span></div>
+    </div>
+    <div class="tile t-people">
+      <span class="kicker">One dot per person</span>
+      <div class="n">15<small>+</small></div>
+      <p class="cap"><b>Senior decision-makers</b> I built relationships with through outreach, calls and meetings.</p>
+      <div class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    </div>
+    <div class="tile t-eng">
+      <span class="kicker">Suguna Hospital</span>
+      <div class="n">22<small>%</small></div>
+      <p class="cap"><b>Increase in engagement</b> across 15+ targeted campaigns.</p>
+      <div class="meter" aria-hidden="true"><span style="width:88%"></span></div>
+      <div class="meter-scale" aria-hidden="true"><span>0%</span><span>25%</span></div>
+    </div>
+    <div class="tile t-buyers">
+      <span class="kicker">Swadeshi Farms</span>
+      <div class="n">20<small>+</small></div>
+      <p class="cap"><b>Buyers converted</b>, contributing to 15% sales growth.</p>
+      <div class="dots d20" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    </div>
+    <div class="tile t-events">
+      <span class="kicker">UTH-UK events</span>
+      <div class="n">3</div>
+      <p class="cap"><b>Industry exhibitions</b> I researched, enrolled us in and followed up leads from.</p>
+      <div class="stamps" aria-hidden="true"><span class="stamp" style="--r:-3deg">MWC</span><span class="stamp" style="--r:2deg">BAPCO</span><span class="stamp" style="--r:-1deg">TCCA</span></div>
+    </div>
   </div>
 </div>
 
-<section id="how">
+<section id="journey">
   <div class="wrap">
-    <div class="sec-head">
-      <span class="label">How I work</span>
-      <h2>The client journey, end to end</h2>
+    <div class="sec-row">
+      <div><span class="kicker">2019 → now</span><h2 class="sec">The journey so far</h2></div>
+      <p>Work and study, drawn to scale. Green is work, black is study, and the filled stop is where I am now.</p>
     </div>
-    <ol class="cycle">
-      <li><span class="n">01</span><h3>Prospect</h3><p>Research targets and work events like MWC, BAPCO and TCCA.</p></li>
-      <li><span class="n">02</span><h3>Discover</h3><p>Uncover real needs with senior decision-makers.</p></li>
-      <li><span class="n">03</span><h3>Propose</h3><p>Tailored proposals, brochures and pitch strategies.</p></li>
-      <li><span class="n">04</span><h3>Negotiate</h3><p>Support contract and T&amp;C negotiations.</p></li>
-      <li><span class="n">05</span><h3>Onboard</h3><p>Clean handover to internal teams.</p></li>
-    </ol>
+    <div class="map">
+      <div class="map-inner">
+        <div class="line-row work">
+          <span class="line-k">Work</span>
+          <div class="rail">
+            <div class="seg" style="left:26.67%;width:5.56%"></div>
+            <div class="seg" style="left:43.33%;width:13.33%"></div>
+            <div class="seg live" style="left:75.56%;width:23.33%"></div>
+            <div class="stop up" style="left:24%"><b>Internships</b><span>Jun – Nov 2021</span></div>
+            <div class="stop up" style="left:43.33%"><b>Suguna Hospital</b><span>Sep 2022 – Sep 2023</span></div>
+            <div class="stop up" style="left:75.56%"><b>UTH-UK</b><span>Feb 2025 – now</span></div>
+          </div>
+        </div>
+        <div class="line-row study">
+          <span class="line-k">Study</span>
+          <div class="rail">
+            <div class="seg" style="left:0%;width:40%"></div>
+            <div class="seg" style="left:56.67%;width:12.22%"></div>
+            <div class="stop down" style="left:1%"><b>BA, Mount Carmel College</b><span>Jun 2019 – Jun 2022</span></div>
+            <div class="stop down" style="left:56.67%"><b>MSc, LSE</b><span>Sep 2023 – Aug 2024</span></div>
+          </div>
+        </div>
+        <div class="years"><i></i><div>
+          <span style="left:7.78%">2020</span><span style="left:21.11%">2021</span><span style="left:34.44%">2022</span><span style="left:47.78%">2023</span><span style="left:61.11%">2024</span><span style="left:74.44%">2025</span><span style="left:87.78%">2026</span>
+        </div></div>
+      </div>
+    </div>
+    <p class="map-note">The 2021 internships were at The Stage Community and Swadeshi Farms.</p>
   </div>
 </section>
 
-<section id="work">
+<div class="dealroom" id="uth">
   <div class="wrap">
-    <div class="sec-head">
-      <span class="label">Featured work</span>
-      <h2>Two projects, in detail</h2>
+    <div class="sec-row">
+      <div><span class="kicker">Current role</span><h2 class="sec">Partnerships at UTH-UK</h2></div>
+      <p>How a partnership comes together, from first research to signed collaboration.</p>
     </div>
-
-    <article class="feature">
+    <div class="deal-grid">
+      <div class="role-card">
+        <h3>Junior Sales and Marketing Specialist</h3>
+        <span class="mono">Feb 2025 – present · Bristol</span>
+        <p>UTH-UK builds technology for critical communications, where buyers are senior and technical. I find organisations that fit, get the right people talking, and support each conversation through to a signed collaboration and a clean handover.</p>
+        <dl>
+          <dt>Partners</dt><dd>Ricoh, Inrico, Critical Communications Finland</dd>
+          <dt>Channels</dt><dd>Email, LinkedIn, follow-up calls, exhibitions</dd>
+          <dt>Tools</dt><dd>HubSpot, Google Sheets, Excel</dd>
+        </dl>
+      </div>
       <div>
-        <span class="label kind">Sales · UTH-UK · 2025–now</span>
-        <h3>From first call to four commercial collaborations</h3>
-        <p class="sum">Growing a critical communications technology company's partner network internationally.</p>
-        <div class="result"><span class="pill hot">4 collaborations</span><span class="pill hot">15+ stakeholders</span><span class="pill">Ricoh</span><span class="pill">Inrico</span><span class="pill">Critical Communications Finland</span></div>
+        <ol class="pipeline">
+          <li class="stage"><h3>Find</h3><div class="bar">Research + MWC · BAPCO · TCCA</div><p>Researched the market, enrolled us in key exhibitions and followed up the leads we met.</p></li>
+          <li class="stage"><h3>Reach out</h3><div class="bar">Email · LinkedIn · calls</div><p>Booked discovery calls and meetings with senior stakeholders, and made follow-up calls to gauge interest.</p></li>
+          <li class="stage"><h3>Pitch</h3><div class="bar">15+ senior stakeholders</div><p>Wrote client-specific pitch strategy documents and proposals, and kept conversations going through to product showcases.</p></li>
+          <li class="stage won"><h3>Partner</h3><div class="bar">4 collaborations</div><p>Supported contract and T&amp;C negotiations, logged everything in HubSpot, and handed over to internal teams for onboarding.</p></li>
+        </ol>
+        <p class="funnel-note">Bars narrow as conversations move toward a signed partnership. They show the shape of the process, not exact volumes.</p>
       </div>
-      <ul class="did">
-        <li><b>Found new opportunities</b> through outbound outreach by email and LinkedIn, market research and industry exhibitions, with a pitch strategy for each prospect.</li>
-        <li><b>Ran senior-level intro calls and discovery</b>, documenting requirements and next steps.</li>
-        <li><b>Tailored the offer</b> with client-specific service brochures and proposals.</li>
-        <li><b>Supported negotiation</b> through T&amp;Cs to onboarding, keeping every contact and follow-up on record in HubSpot.</li>
-      </ul>
-    </article>
+    </div>
+    <div class="also"><span><b>Also at UTH-UK:</b> creatives for the Logo 2.0 brand relaunch across LinkedIn, X and the website, and four blogs and newsletter features from desk research.</span></div>
+  </div>
+</div>
 
-    <article class="feature">
-      <div>
-        <span class="label kind">Buyer psychology · Personal project</span>
-        <h3>Why a B2B website persuades</h3>
-        <p class="sum">A behavioural audit of Broker Insights, a data platform for insurance brokers. The same levers I use in outreach and pitches.</p>
-        <div class="result"><span class="pill">Social proof</span><span class="pill">Framing</span><span class="pill">Loss aversion</span><span class="pill">Availability bias</span></div>
-      </div>
-      <div class="lenses">
-        <div class="lens-row"><h4>Social proof</h4><p><q>850+ broker offices and 26 leading insurers</q>. Peers already trust it, so buying feels safe.</p></div>
-        <div class="lens-row"><h4>Framing</h4><p><q>Explore, simulate and act on data</q>. Sells the decision, not the dashboard.</p></div>
-        <div class="lens-row"><h4>Loss aversion</h4><p><q>Gives you back 30% of your time</q>. Staying put now feels like a cost.</p></div>
-        <div class="lens-row"><h4>Availability bias</h4><p><q>Brokers use only about half their carriers</q>. Exposes the blind spot data fixes.</p></div>
-      </div>
-    </article>
+<section id="audit">
+  <div class="wrap">
+    <div class="sec-row">
+      <div><span class="kicker">Personal project</span><h2 class="sec">How buyers decide</h2></div>
+      <p>I read the website of Broker Insights, a data platform for insurance brokers, the way a buyer would, and noted the psychology behind each line that works. I bring the same lens to outreach and pitches.</p>
+    </div>
+    <div class="page-sheet">
+      <div class="note-row"><blockquote>"<mark>850+ broker offices</mark> and 26 leading insurers"</blockquote><div class="note"><b>Social proof</b><span>Peers already trust it, so saying yes feels safe.</span></div></div>
+      <div class="note-row"><blockquote>"Explore, simulate and <mark>act on data</mark>"</blockquote><div class="note"><b>Framing</b><span>It sells the decision the buyer gets to make, not the dashboard.</span></div></div>
+      <div class="note-row"><blockquote>"Gives you back <mark>30% of your time</mark>"</blockquote><div class="note"><b>Loss aversion</b><span>Staying with the old way starts to feel like a cost.</span></div></div>
+      <div class="note-row"><blockquote>"Brokers use only <mark>about half</mark> their carriers"</blockquote><div class="note"><b>Availability bias</b><span>It points at a blind spot the buyer hadn't noticed.</span></div></div>
+    </div>
   </div>
 </section>
 
-<section>
+<section id="earlier">
   <div class="wrap">
-    <div class="sec-head">
-      <span class="label">More work</span>
-      <h2>At a glance</h2>
+    <div class="sec-row">
+      <div><span class="kicker">2021 – 2023</span><h2 class="sec">Earlier work</h2></div>
     </div>
-    <div class="more">
-      <div class="card">
-        <span class="label">Marketing · Suguna Hospital</span>
-        <h3>Targeted healthcare campaigns</h3>
-        <p>A <span class="stat">22%</span> increase in engagement from 15+ demographic-specific campaigns, guided by CRM data.</p>
+    <div class="earlier">
+      <div class="growth">
+        <h3>Growth I contributed to</h3>
+        <p class="sub">Percentage increase, shown on the same scale</p>
+        <div class="g-row"><div class="g-head"><span>Engagement<small>Suguna Hospital, 15+ campaigns</small></span><b>22%</b></div><div class="g-track"><span style="width:88%"></span></div></div>
+        <div class="g-row"><div class="g-head"><span>Sales<small>Swadeshi Farms campaign</small></span><b>15%</b></div><div class="g-track"><span style="width:60%"></span></div></div>
+        <div class="g-scale"><span>0%</span><span>5%</span><span>10%</span><span>15%</span><span>20%</span><span>25%</span></div>
       </div>
-      <div class="card">
-        <span class="label">Sales · Swadeshi Farms</span>
-        <h3>Relationship-led selling</h3>
-        <p><span class="stat">20+</span> buyers converted and <span class="stat">+15%</span> sales for a small handcrafted-goods business.</p>
-      </div>
-      <div class="card">
-        <span class="label">Brand · UTH-UK</span>
-        <h3>Brand relaunch and content</h3>
-        <p>Logo 2.0 relaunch creatives across LinkedIn, X and web, plus 4 blogs and newsletter features.</p>
-      </div>
-      <div class="card wide">
-        <span class="label">Behavioural strategy</span>
-        <h3>Insight-led recommendations</h3>
-        <ul>
-          <li><b>George IV pub:</b> redesigned layout, seating and payments for smoother customer flow.</li>
-          <li><b>BYJU's:</b> rebuilding brand trust from consumer perception.</li>
-          <li><b>Meal deals:</b> behavioural solutions pitched to a government research team.</li>
-        </ul>
-      </div>
-      <div class="card">
-        <span class="label">Leadership</span>
-        <h3>Beyond the day job</h3>
-        <ul>
-          <li>Led a 30+ event intercollegiate festival for 300+ students.</li>
-          <li>Led a CSR initiative improving a children's care facility.</li>
-        </ul>
+      <div class="roles">
+        <div class="role"><span class="ico" aria-hidden="true">S</span>
+          <div class="head"><h3>Digital Marketing Executive</h3><span class="when">Sep 2022 – Sep 2023</span></div>
+          <span class="org">Suguna Hospital, Bengaluru</span>
+          <p>Ran <span class="num">15+</span> campaigns tailored to specific demographics, from wellness camps to blood donation drives and health check-up days, using CRM data, patient feedback and on-site research at 5+ competing providers.</p>
+        </div>
+        <div class="role"><span class="ico" aria-hidden="true">F</span>
+          <div class="head"><h3>Sales Intern</h3><span class="when">Jul – Oct 2021</span></div>
+          <span class="org">Swadeshi Farms, Bengaluru</span>
+          <p>Ran a campaign for handcrafted products and converted <span class="num">20+</span> buyers through relationship-led selling and follow-up.</p>
+        </div>
+        <div class="role"><span class="ico" aria-hidden="true">T</span>
+          <div class="head"><h3>Digital Marketing Intern</h3><span class="when">Jun – Nov 2021</span></div>
+          <span class="org">The Stage Community, Bengaluru</span>
+          <p>Organised soft-skills webinars and developed marketing strategies to grow their reach.</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="experience">
+<section id="study">
   <div class="wrap">
-    <div class="sec-head">
-      <span class="label">Experience &amp; education</span>
-      <h2>Background</h2>
+    <div class="sec-row">
+      <div><span class="kicker">Education and research</span><h2 class="sec">Where the psychology comes from</h2></div>
     </div>
-    <div class="timeline">
-      <div class="tl"><span class="when">Feb 2025 – now</span><div><h3>Junior Sales and Marketing Specialist</h3><span class="org">UTH-UK · Bristol</span></div><span class="tagline">4 collaborations</span></div>
-      <div class="tl"><span class="when">2023 – 2024</span><div><h3>MSc Psychology of Economic Life</h3><span class="org">London School of Economics · Merit</span></div><span class="tagline">Behavioural economics</span></div>
-      <div class="tl"><span class="when">Sep 2022 – Sep 2023</span><div><h3>Digital Marketing Executive</h3><span class="org">Suguna Hospital · Bengaluru</span></div><span class="tagline">22% engagement</span></div>
-      <div class="tl"><span class="when">Jul – Oct 2021</span><div><h3>Sales Intern</h3><span class="org">Swadeshi Farms · Bengaluru</span></div><span class="tagline">+15% sales</span></div>
-      <div class="tl"><span class="when">2019 – 2022</span><div><h3>BA Psychology, Economics and Sociology</h3><span class="org">Mount Carmel College · GPA 8.6/10</span></div><span class="tagline">1st Class Exemplary</span></div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="label">Skills</span>
-      <h2>What I bring</h2>
-    </div>
-    <div class="skills-grid">
-      <div><h3>Sales</h3><div class="chips"><span class="chip">Outbound prospecting</span><span class="chip">Follow-up calls</span><span class="chip">Discovery</span><span class="chip">Consultative selling</span><span class="chip">Proposals</span><span class="chip">Negotiation</span><span class="chip">Relationship building</span><span class="chip">Client onboarding</span></div></div>
-      <div><h3>Insight</h3><div class="chips"><span class="chip">Buyer psychology</span><span class="chip">Market research</span><span class="chip">Competitor analysis</span><span class="chip">Stakeholder management</span><span class="chip">Event prospecting</span></div></div>
-      <div><h3>Tools &amp; learning</h3><div class="chips"><span class="chip">HubSpot</span><span class="chip">Google Sheets</span><span class="chip">Excel</span><span class="chip">Microsoft Office</span><span class="chip">Figma (beginner)</span><span class="chip">McKinsey Forward Program</span></div></div>
+    <div class="study-grid">
+      <div class="tile deg"><span class="kicker">MSc · 2023–24</span><span class="big">LSE</span><h3>Psychology of Economic Life</h3><p>London School of Economics. Merit.</p></div>
+      <div class="tile deg"><span class="kicker">BA · 2019–22</span><span class="big">1st Class</span><h3>Psychology, Economics and Sociology</h3><p>Mount Carmel College. Exemplary, GPA 8.6/10.</p></div>
+      <div class="tile deg"><span class="kicker">2025</span><span class="big">McKinsey</span><h3>Forward Program</h3><p>Structured problem solving and communication through real business cases.</p></div>
+      <div class="tile"><span class="kicker">Field research</span><h3>George IV pub</h3><p>Observed customers in person and recommended digital ordering and payment, clearer signage, a loyalty programme and weekly events.</p></div>
+      <div class="tile"><span class="kicker">Pitch</span><h3>Sustainable meal deals</h3><p>Proposed budget meal deals with less plastic and healthier options to a government social research team.</p></div>
+      <div class="tile"><span class="kicker">Brand case study</span><h3>Rise and fall of BYJU's</h3><p>Analysed consumer sentiment and positioning behind the Indian edtech brand.</p></div>
     </div>
   </div>
 </section>
 
 <footer id="contact">
   <div class="wrap">
-    <span class="label">Contact</span>
-    <h2 style="margin-top:10px">Let's talk about growing your clients and partnerships.</h2>
-    <div class="contact">
-      <div class="item"><span class="k">Email</span><span id="email2">siriravindra05@gmail.com</span><button class="copy" type="button" data-copy="email2">Copy</button></div>
-      <div class="item"><span class="k">Phone</span><span>+44 7435 167637</span></div>
-      <div class="item"><a href="https://www.linkedin.com/in/siri-ravindra/" target="_blank" rel="noopener">LinkedIn ↗</a></div>
+    <p class="big">Building a sales or partnerships team in London? I'd love to be part of it.</p>
+    <div class="links">
+      <a class="btn primary" href="mailto:siriravindra05@gmail.com"><span>siriravindra05@gmail.com</span><small>Email</small></a>
+      <a class="btn" href="https://www.linkedin.com/in/siri-ravindra/" target="_blank" rel="noopener"><span>in/siri-ravindra</span><small>LinkedIn</small></a>
+      <div class="btn"><span>+44 7435 167637</span><small>Phone</small></div>
     </div>
   </div>
 </footer>
